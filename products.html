@@ -9,11 +9,15 @@
       body {
         font-family: sans-serif;
       }
+     .cats{
+       font-size: 30px;
+       font-weight: bolder;
+     }
       #nav {
         display: flex;
         flex-direction: column;
         width: 200px;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         position: sticky;
         top: 30px;
         font-size: 18px;
@@ -26,6 +30,7 @@
       }
       #nav>a:hover{
         text-decoration: underline;
+        color: black;
       }
       #container{
           display: flex;
@@ -40,40 +45,40 @@
             width: 100%;
             margin-left:auto;
             margin-right: auto;
-            margin-top: 20px;
-            gap:25px;
+            margin-top: 0px;
+            gap:15px;
             display: grid;
             grid-template-columns: repeat(3,1fr);
             line-height: 95%;
         }
         #featured {
-          grid-template-rows: repeat(4,400px);
+          grid-template-rows: repeat(4,380px);
         } 
         
         #tenders{
-          grid-template-rows: repeat(3,400px);
+          grid-template-rows: repeat(3,380px);
         }
         #alc,#sides,#sauces,#fc,#sandwich,#buckets{
-          grid-template-rows: repeat(2,400px);
+          grid-template-rows: repeat(2,380px);
         }
         #ppb,#desserts{
-          grid-template-rows: repeat(1,400px);
+          grid-template-rows: repeat(1,380px);
         }
         #top{
           display: flex;
-          margin-left: 27%;
+          margin-left: auto;
           margin-top: -400px;
-          width: 850px;
+          width: 70%;
           height: 350px;
           object-fit: contain;
-          border: 2px solid blue;
+          /* border: 2px solid blue; */
           background-color: #f8f7f5;
         }
         
        
   
      #container>div>div {
-            border: 2px solid rebeccapurple;
+            /* border: 2px solid rebeccapurple; */
             border-radius: 5px;
             /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
             
@@ -87,10 +92,11 @@ width: 90%;
 height: 100%;
         }
         #container img{
-            width: 100%;
+            width: 90%;
             height: 60%;
-            border-bottom: 0.5px solid black;
+            /* border-bottom: 0.5px solid black; */
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 5px;
           
         }
         button{
@@ -106,12 +112,13 @@ height: 100%;
           width: 60px;
           height: 60px;
         }
+        
     </style>
 </head>
 <body>
+  <img src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg">
 
   <div id="nav">
-    <img src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg">
     <h2 style="font-weight:800;">KFC® MENU</h2>
     <a href="products.html#featured">Featured</a>
     <a href="products.html#buckets">Buckets</a>
@@ -134,17 +141,29 @@ height: 100%;
     <img src="https://images.ctfassets.net/9tka4b3550oc/Pq667frOtU9m5YT9ZkifO/f65d345b5c58f2d0eff6527713c72caf/ChickenHero_Mobile_Nobackground-1.png">
   </div>
   </div>
+  
   <div id="container">
+    <p class="cats">FEATURED</p>
     <div id="featured"></div>
+    <p class="cats">BUCKETS</p>
     <div id="buckets"></div>
+    <p class="cats">TENDERS</p>
     <div id="tenders"></div>
+    <p class="cats">SANDWICHES</p>
     <div id="sandwich"></div>
+    <p class="cats">FRIED CHICKEN</p>
     <div id="fc"></div>
+    <p class="cats">POT PIES & BOWLS</p>
     <div id="ppb"></div>
+    <p class="cats">A LA CARTE</p>
     <div id="alc"></div>
+    <p class="cats">SIDES</p>
     <div id="sides"></div>
+    <p class="cats">SAUCES</p>
     <div id="sauces"></div>
+    <p class="cats">DESSERTS</p>
     <div id="desserts"></div>
+    <p class="cats">DRINKS</p>
     <div id="drinks"></div>
   </div>
 </body>
@@ -704,17 +723,28 @@ var boxa=document.querySelector("#featured")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
-
+    
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+    acart.style.border="none";
+    //Add to Cart
+    var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
+
+    acart.append(cartlogo)
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxa.append(box)
     })
 
@@ -742,17 +772,29 @@ var boxa=document.querySelector("#featured")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
+  
 
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+     acart.style.border="none";
+     //Add to Cart
+     var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
+    acart.append(cartlogo)
+
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxb.append(box)
     })
 
@@ -780,17 +822,29 @@ var boxa=document.querySelector("#featured")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
+  
 
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+     acart.style.border="none";
+     //Add to Cart
+     var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
+    acart.append(cartlogo)
+
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxc.append(box)
     })
 
@@ -817,17 +871,27 @@ var boxa=document.querySelector("#featured")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
+  
 
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+     acart.style.border="none";
+     //Add to Cart
+     var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxd.append(box)
     })
 
@@ -854,17 +918,27 @@ var boxe=document.querySelector("#fc")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
+  
 
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+     acart.style.border="none";
+     //Add to Cart
+     var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxe.append(box)
     })
 
@@ -891,17 +965,27 @@ var boxe=document.querySelector("#fc")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
+  
 
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+     acart.style.border="none";
+     //Add to Cart
+     var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxf.append(box)
     })
 
@@ -928,17 +1012,27 @@ var boxe=document.querySelector("#fc")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
+  
 
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+     acart.style.border="none";
+     //Add to Cart
+     var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxg.append(box)
     })
 
@@ -965,17 +1059,27 @@ var boxe=document.querySelector("#fc")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
+  
 
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+     acart.style.border="none";
+     //Add to Cart
+     var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxh.append(box)
     })
 
@@ -1002,17 +1106,27 @@ var boxe=document.querySelector("#fc")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
+  
 
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+     acart.style.border="none";
+     //Add to Cart
+     var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxi.append(box)
     })
 
@@ -1039,17 +1153,27 @@ var boxe=document.querySelector("#fc")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
+  
 
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+     acart.style.border="none";
+     //Add to Cart
+     var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxj.append(box)
     })
 
@@ -1076,17 +1200,27 @@ var boxe=document.querySelector("#fc")
     price.innerText=ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
-    var cat=document.createElement("p")
-    cat.innerText=ele.category;
+  
 
     var acart=document.createElement("button")
-    acart.innerText="Add to cart";
-    acart.style.borderRadius="5px";
+    acart.innerText="Add to Bag";
+    acart.style.borderRadius="10px";
+     acart.style.border="none";
+     //Add to Cart
+     var cartlogo=document.createElement("img")
+    cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
+    cartlogo.style.width="20px"
+    cartlogo.style.height="20px"
+    cartlogo.style.border="0px"
+    cartlogo.style.boxShadow="none"
+    cartlogo.style.marginLeft="5px"
+    cartlogo.style.verticalAlign="middle"
+    acart.append(cartlogo)
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
 
-    box.append(url,name,price,calor,cat,acart)
+    box.append(url,name,price,calor,acart)
     boxk.append(box)
     })
 
