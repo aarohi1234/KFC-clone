@@ -103,11 +103,11 @@
             </div>
             <div>
                 <label for = "">Password</label><br>
-                <input id = "password" type = "password" /><br><br>
+                <input id = "password" type = "text" /><br><br>
             </div>
             <div>
                 <label for = ""> Confirm Password</label><br>
-                <input id = "password" type = "password" /><br><br>
+                <input id = "password1" type = "text" /><br><br>
             </div>
         
          
@@ -145,7 +145,8 @@
         var formObj = {
             email: basicForm.email.value,
             mobile: basicForm.number.value,
-            password: basicForm.password.value
+            password: basicForm.password.value,
+            name:basicForm.name.value+" "+basicForm.lname.value,
         }
         // formData.push(formObj);
 
