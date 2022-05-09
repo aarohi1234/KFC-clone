@@ -104,6 +104,8 @@ height: 100%;
           color: white;
           padding: 5px;
           margin-bottom: -10px;
+          border: none;
+          border-radius: 10px;
         }
         p{
           line-height: 5px;
@@ -112,10 +114,29 @@ height: 100%;
           width: 60px;
           height: 60px;
         }
-        
+        #navbar{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          /* border: 2px solid rebeccapurple; */
+        }
+        a>img{
+          width: 35px;
+          height: 35px;
+        }
     </style>
 </head>
 <body>
+  <div id="navbar">
+    <h3>KFC</h3>
+    <a href="product_page.html">MENU</a>
+    <a>Careers</a>
+    <a>About</a>
+    <a href="product_page.html"><button>Start Order</button></a>
+    <a href="cart.html">
+    <img src="https://cdn-icons.flaticon.com/png/128/3139/premium/3139155.png?token=exp=1651946580~hmac=45b4a99603d5a9f64b8a79d8e4173417">
+  </a>
+  </div>
   <img src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg">
 
   <div id="nav">
@@ -132,8 +153,8 @@ height: 100%;
     <a href="product_page.html#desserts">Desserts</a>
     <a href="product_page.html#drinks">Drinks</a>
   </div>
+  
   <div id="top">
-
     <div class="head">
       <h1>10% OFF ON ALL ORDERS</h1>
     </div>
@@ -174,7 +195,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-sidesloversCOBmeal?q=75",
       name:"Sides Lovers 8 pc. Chicken Meal",
       calories:"calories:2600",
-      price:"₹300",
+      price:"300",
       category:"Featured",
       prod_id:"f1", 
     },
@@ -182,7 +203,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-sidesloverstendersmeal?q=75",
       name:"Sides Lovers 8 pc. Tenders Meal",
       calories:"calories:3000",
-      price:"₹300",
+      price:"300",
       category:"Featured",
       prod_id:"f2",  
     },
@@ -190,7 +211,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-TendersBucketForOne?q=75",
       name:"Tenders Bucket for One",
       calories:"calories:1700",
-      price:"₹150",
+      price:"150",
       category:"Featured",
       prod_id:"f3",   
     },
@@ -198,7 +219,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketMealStandard?q=75",
       name:"8 pc. Meal",
       calories:"calories:2500",
-      price:"₹300",
+      price:"300",
       category:"Featured",
       prod_id:"f4",    
     },
@@ -206,7 +227,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-8pcTendersMeal-test?q=75",
       name:"8 pc. Tenders Meal",
       calories:"calories:2910",
-      price:"₹300",
+      price:"300",
       category:"Featured",
       prod_id:"f5",    
     },
@@ -214,7 +235,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-sandwichandtendersmeal?q=75",
       name:"Sandwiches and Tenders Meal",
       calories:"calories:4900",
-      price:"₹470",
+      price:"470",
       category:"Featured",
       prod_id:"f6",    
     },
@@ -222,7 +243,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-sandwichandsidesmeal?q=75",
       name:"Sandwiches and Slides",
       calories:"calories:3040",
-      price:"₹250",
+      price:"250",
       category:"Featured",
       prod_id:"f7",   
     },
@@ -230,7 +251,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndcombo?q=75",
       name:"KFC Chicken Sandwich Combo",
       calories:"calories:800",
-      price:"₹100",
+      price:"100",
       category:"Featured",
       prod_id:"f8",   
     },
@@ -238,7 +259,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-10pcfeast?q=75",
       name:"10 Piece Feast",
       calories:"calories:4200",
-      price:"₹300",
+      price:"300",
       category:"Featured",
       prod_id:"f9",    
     },
@@ -246,7 +267,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-FamousBowlFillUp?q=75",
       name:"Famous Bowl Fill Up",
       calories:"calories:900",
-      price:"₹85",
+      price:"85",
       category:"Featured",
       prod_id:"f10",    
     },  
@@ -260,7 +281,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-Pepsi?q=75",
       name:"Pepsi",
       calories:"calories:380",
-      price:"₹32",
+      price:"32",
       category:"Drinks",
       prod_id:"d1",    
     },   
@@ -268,7 +289,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-dietPepsi?q=75",
       name:"Diet Pepsi",
       calories:"calories:380",
-      price:"₹32",
+      price:"32",
       category:"Drinks",
       prod_id:"d2",    
     },    
@@ -276,7 +297,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-mtndew?q=75",
       name:"Mountain Dew",
       calories:"calories:380",
-      price:"₹32",
+      price:"32",
       category:"Drinks",
       prod_id:"d3",    
     },    
@@ -284,7 +305,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-LemMed?q=75",
       name:"Lemonade",
       calories:"calories:200",
-      price:"₹37",
+      price:"37",
       category:"Drinks",
       prod_id:"d4",    
     },    
@@ -292,7 +313,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-BevBucket?q=75",
       name:"2L Beverage",
       calories:"calories:800",
-      price:"₹62",
+      price:"62",
       category:"Drinks",
       prod_id:"d5",    
     },    
@@ -300,7 +321,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-bottledWater?q=75",
       name:"Bottled Water",
       calories:"calories:0",
-      price:"₹20",
+      price:"20",
       category:"Drinks",
       prod_id:"d6",    
     },     
@@ -310,7 +331,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-1Cookie?q=75",
       name:"Chocolate Chip Cookie",
       calories:"calories:120",
-      price:"₹10",
+      price:"10",
       category:"Desserts",
       prod_id:"des1",    
     },
@@ -319,7 +340,7 @@ height: 100%;
       img_url:"https://images.ctfassets.net/9tka4b3550oc/1XFzu9NKNtkE8UpD3plXJ3/c8a6893c77aaeb16c82a0e2b43e2c59c/2.jpg?q=75&w=640",
       name:"Chocolate Chip Cake",
       calories:"calories:300",
-      price:"₹70",
+      price:"70",
       category:"Desserts",
       prod_id:"des2",    
     },
@@ -328,7 +349,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketMealStandard?q=75",
       name:"8 pc. Meal",
       calories:"calories:2600",
-      price:"₹300",
+      price:"300",
       category:"Buckets",
       prod_id:"b1",    
     },
@@ -336,7 +357,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-sidesloversCOBmeal?q=75",
       name:"Sides Lovers 8 pc. Chicken Meal",
       calories:"calories:4700",
-      price:"₹300",
+      price:"300",
       category:"Buckets",
       prod_id:"b2",    
     },
@@ -344,7 +365,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-10pcfeast?q=75",
       name:"10 pc. Feast",
       calories:"calories:4200",
-      price:"₹300",
+      price:"300",
       category:"Buckets",
       prod_id:"b3",    
     },
@@ -352,7 +373,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-12pcBucketDark?q=75",
       name:"12 pc. Chicken Bucket",
       calories:"calories:3000",
-      price:"₹260",
+      price:"260",
       category:"Buckets",
       prod_id:"b4",    
     },
@@ -360,7 +381,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-16pcBucketStandard?q=75",
       name:"16 pc. Chicken Bucket",
       calories:"calories:9600",
-      price:"₹340",
+      price:"340",
       category:"Buckets",
       prod_id:"b5",    
     },
@@ -368,7 +389,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-16pcBucketMealStandard?q=75",
       name:"16 pc. Meal",
       calories:"calories:9600",
-      price:"₹450",
+      price:"450",
       category:"Buckets",
       prod_id:"b6",    
     },
@@ -377,7 +398,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-new16pcTenders?q=75",
       name:"16 pc. Tenders Bucket",
       calories:"calories:4800",
-      price:"₹340",
+      price:"340",
       category:"Tenders",
       prod_id:"t1",    
     },
@@ -386,7 +407,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-new12pcTenders?q=75",
       name:"12 pc. Tenders Bucket",
       calories:"calories:2000",
-      price:"₹260",
+      price:"260",
       category:"Tenders",
       prod_id:"t2",    
     },
@@ -395,7 +416,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-new8pcTenders?q=75",
       name:"8 pc. Tenders Bucket",
       calories:"calories:2000",
-      price:"₹190",
+      price:"190",
       category:"Tenders",
       prod_id:"t3",    
     },
@@ -404,7 +425,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-new16pcTendersMeal?q=75",
       name:"16 pc. Tenders Meal",
       calories:"calories:500",
-      price:"₹500",
+      price:"500",
       category:"Tenders",
       prod_id:"t4",    
     },
@@ -413,7 +434,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-TendersBucketForOne?q=75",
       name:"Tenders Bucket for One",
       calories:"calories:1700",
-      price:"₹150",
+      price:"150",
       category:"Tenders",
       prod_id:"t5",    
     },
@@ -422,7 +443,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-5pcTendersBox?q=75",
       name:"5 pc. Tenders Box",
       calories:"calories:1800",
-      price:"₹150",
+      price:"150",
       category:"Tenders",
       prod_id:"t6",    
     },
@@ -431,7 +452,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-5pcNHTendersCombo2?q=75",
       name:"5 pc. Nashville Hot Tenders Combo",
       calories:"calories:1400",
-      price:"₹130",
+      price:"130",
       category:"Tenders",
       prod_id:"t7",    
     },
@@ -440,7 +461,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-KFCSauce?q=75",
       name:"KFC Sauce",
       calories:"calories:90",
-      price:"₹25",
+      price:"25",
       category:"Sauces",
       prod_id:"sa1",    
     },
@@ -448,7 +469,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-HoneyBBQ?q=75",
       name:"Honey BBQ",
       calories:"calories:40",
-      price:"₹25",
+      price:"25",
       category:"Sauces",
       prod_id:"sa2",    
     },
@@ -457,7 +478,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-HoneyMustard?q=75",
       name:"Honey Mustard",
       calories:"calories:120",
-      price:"₹25",
+      price:"25",
       category:"Sauces",
       prod_id:"sa3",    
     },
@@ -466,7 +487,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-Ranch?q=75",
       name:"Classic Ranch",
       calories:"calories:100",
-      price:"₹25",
+      price:"25",
       category:"Sauces",
       prod_id:"sa4",    
     },
@@ -475,7 +496,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-honeySauce2?q=75",
       name:"Honey Sauce",
       calories:"calories:30",
-      price:"₹0",
+      price:"0",
       category:"Sauces",
       prod_id:"sa5",    
     },
@@ -484,7 +505,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-hotSauce2?q=75",
       name:"Hot Sauce",
       calories:"calories:10",
-      price:"₹0",
+      price:"0",
       category:"Sauces",
       prod_id:"sa6",    
     },]
@@ -492,7 +513,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-IndFries?q=75",
       name:"Secret Recipe Fries",
       calories:"calories:900",
-      price:"₹40",
+      price:"40",
       category:"Sides",
       prod_id:"si1",    
     },
@@ -500,7 +521,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-IndMashGravy?q=75",
       name:"Mashed Potatoes & Gravy",
       calories:"calories:500",
-      price:"₹40",
+      price:"40",
       category:"Sides",
       prod_id:"si2",    
     },
@@ -508,7 +529,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-IndMacCheese?q=75",
       name:"Mac & Cheese",
       calories:"calories:540",
-      price:"₹40",
+      price:"40",
       category:"Sides",
       prod_id:"si3",    
     },
@@ -516,7 +537,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-IndColeslaw?q=75",
       name:"Cole Slaw",
       calories:"calories:640",
-      price:"₹40",
+      price:"40",
       category:"Sides",
       prod_id:"si4",    
     },
@@ -524,7 +545,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-IndGravy?q=75",
       name:"Gravy",
       calories:"calories:130",
-      price:"₹14",
+      price:"14",
       category:"Sides",
       prod_id:"si5",    
     },
@@ -532,7 +553,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-IndCorn?q=75",
       name:"Whole Kernel Corn",
       calories:"calories:280",
-      price:"₹40",
+      price:"40",
       category:"Sides",
       prod_id:"si6",    
     },
@@ -541,7 +562,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-AlcBreast?q=75",
       name:"A La Carte Breast",
       calories:"calories:530",
-      price:"₹40",
+      price:"40",
       category:"A La Carte",
       prod_id:"alc1",    
     },
@@ -549,7 +570,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-AlcLeg?q=75",
       name:"A La Carte Drum",
       calories:"calories:170",
-      price:"₹30",
+      price:"30",
       category:"A La Carte",
       prod_id:"alc2",    
     },
@@ -557,7 +578,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-AlcThigh?q=75",
       name:"A La Carte Thigh",
       calories:"calories:330",
-      price:"₹30",
+      price:"30",
       category:"A La Carte",
       prod_id:"alc3",    
     },
@@ -565,7 +586,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-AlcWing?q=75",
       name:"A La Carte Wing",
       calories:"calories:500",
-      price:"₹25",
+      price:"25",
       category:"A La Carte",
       prod_id:"alc4",    
     },
@@ -573,7 +594,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-PotPie?q=75",
       name:"Pot Pie",
       calories:"calories:720",
-      price:"₹70",
+      price:"70",
       category:"A La Carte",
       prod_id:"alc5",    
     },]
@@ -581,7 +602,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-FamousBowlFillUp?q=75",
       name:"Famous Bowl Fill Up",
       calories:"calories:1100",
-      price:"₹85",
+      price:"85",
       category:"Pot Pies & Bowls",
       prod_id:"ppb1",    
     },
@@ -589,7 +610,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-PotPieFillUp?q=75",
       name:"Pot Pie Fill Up",
       calories:"calories:1100",
-      price:"₹82",
+      price:"82",
       category:"Pot Pies & Bowls",
       prod_id:"ppb2",    
     },
@@ -598,7 +619,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-1BrFU?q=75",
       name:"1 pc Breast Combo",
       calories:"calories:1100",
-      price:"₹82",
+      price:"82",
       category:"Fried-Chicken",
       prod_id:"fc1",    
     },
@@ -606,7 +627,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-2DTFU?q=75",
       name:"2 pc Drum & Thigh Fill Up",
       calories:"calories:1150",
-      price:"₹92",
+      price:"92",
       category:"Fried-Chicken",
       prod_id:"fc2",    
     },
@@ -614,7 +635,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-3pcCombo1B1T1W?q=75",
       name:"3 pc. Chicken Combo -2 Breasts, 1 Wing",
       calories:"calories:1700",
-      price:"₹115",
+      price:"115",
       category:"Fried-Chicken",
       prod_id:"fc3",    
     },
@@ -622,7 +643,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-3pcCombo1B1T1W?q=75",
       name:"3 pc. Chicken Combo -Breast, Thigh and Wing",
       calories:"calories:1600",
-      price:"₹105",
+      price:"105",
       category:"Fried-Chicken",
       prod_id:"fc4",    
     },
@@ -630,7 +651,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-6WingsUnsauced?q=75",
       name:"Kentucky Fried Wings Combo",
       calories:"calories:1100",
-      price:"₹66",
+      price:"66",
       category:"Fried-Chicken",
       prod_id:"fc5",    
     },
@@ -639,7 +660,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-ChLtlCombo?q=75",
       name:"Chicken Little Combo",
       calories:"calories:800",
-      price:"₹100",
+      price:"100",
       category:"Sandwiches",
       prod_id:"s1",    
     },
@@ -647,7 +668,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-AlcChLtl?q=75",
       name:"Chicken Little",
       calories:"calories:500",
-      price:"₹360",
+      price:"360",
       category:"Sandwiches",
       prod_id:"s2",    
     },
@@ -656,7 +677,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndalc?q=75",
       name:"KFC Chicken Sandwich",
       calories:"calories:800",
-      price:"₹540",
+      price:"540",
       category:"Sandwiches",
       prod_id:"s3",    
     },
@@ -665,7 +686,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndbigbox?q=75",
       name:"KFC Chicken Sandwich Box",
       calories:"calories:1200",
-      price:"₹150",
+      price:"150",
       category:"Sandwiches",
       prod_id:"s4",    
     },
@@ -674,7 +695,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-sandwichandtendersmeal?q=75",
       name:"Sandwich and Tenders Meal",
       calories:"calories:6800",
-      price:"₹470",
+      price:"470",
       category:"Sandwiches",
       prod_id:"s5",    
     },
@@ -683,7 +704,7 @@ height: 100%;
       img_url:"https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndcombo?q=75",
       name:"KFC Chicken Sandwich Combo",
       calories:"calories:1000",
-      price:"₹100",
+      price:"100",
       category:"Sandwiches",
       prod_id:"s6",    
     },]
@@ -720,14 +741,12 @@ var boxa=document.querySelector("#featured")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
     
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-    acart.style.border="none";
     //Add to Cart
     var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -739,7 +758,6 @@ var boxa=document.querySelector("#featured")
     cartlogo.style.verticalAlign="middle"
     acart.append(cartlogo)
 
-    acart.append(cartlogo)
     acart.addEventListener("click",function(){
       add2cart(ele)
     })
@@ -769,15 +787,13 @@ var boxa=document.querySelector("#featured")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
   
 
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-     acart.style.border="none";
      //Add to Cart
      var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -787,7 +803,6 @@ var boxa=document.querySelector("#featured")
     cartlogo.style.boxShadow="none"
     cartlogo.style.marginLeft="5px"
     cartlogo.style.verticalAlign="middle"
-    acart.append(cartlogo)
     acart.append(cartlogo)
 
     acart.addEventListener("click",function(){
@@ -819,15 +834,13 @@ var boxa=document.querySelector("#featured")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
   
 
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-     acart.style.border="none";
      //Add to Cart
      var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -837,7 +850,6 @@ var boxa=document.querySelector("#featured")
     cartlogo.style.boxShadow="none"
     cartlogo.style.marginLeft="5px"
     cartlogo.style.verticalAlign="middle"
-    acart.append(cartlogo)
     acart.append(cartlogo)
 
     acart.addEventListener("click",function(){
@@ -868,15 +880,13 @@ var boxa=document.querySelector("#featured")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
   
 
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-     acart.style.border="none";
      //Add to Cart
      var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -915,15 +925,13 @@ var boxe=document.querySelector("#fc")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
   
 
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-     acart.style.border="none";
      //Add to Cart
      var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -962,15 +970,13 @@ var boxe=document.querySelector("#fc")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
   
 
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-     acart.style.border="none";
      //Add to Cart
      var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -1009,15 +1015,13 @@ var boxe=document.querySelector("#fc")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
   
 
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-     acart.style.border="none";
      //Add to Cart
      var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -1056,15 +1060,13 @@ var boxe=document.querySelector("#fc")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
   
 
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-     acart.style.border="none";
      //Add to Cart
      var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -1103,15 +1105,13 @@ var boxe=document.querySelector("#fc")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
   
 
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-     acart.style.border="none";
      //Add to Cart
      var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -1150,15 +1150,13 @@ var boxe=document.querySelector("#fc")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
   
 
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-     acart.style.border="none";
      //Add to Cart
      var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -1197,15 +1195,13 @@ var boxe=document.querySelector("#fc")
     var name=document.createElement("h4")
     name.innerText=ele.name;
     var price=document.createElement("p")
-    price.innerText=ele.price;
+    price.innerText="₹"+ele.price;
     var calor=document.createElement("p")
     calor.innerText=ele.calories;
   
 
     var acart=document.createElement("button")
     acart.innerText="Add to Bag";
-    acart.style.borderRadius="10px";
-     acart.style.border="none";
      //Add to Cart
      var cartlogo=document.createElement("img")
     cartlogo.src="https://online.kfc.co.in/static/media/Icon_Add_to_Cart.58b87a9b.svg"
@@ -1229,7 +1225,7 @@ var boxe=document.querySelector("#fc")
 
 // ADD 2 CART
 
-let cartlsdata=[]
+let cartlsdata=JSON.parse(localStorage.getItem("productcart"))||[]
   function add2cart(ele){
   cartlsdata.push(ele);
   localStorage.setItem("productcart",JSON.stringify(cartlsdata))
