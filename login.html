@@ -160,6 +160,7 @@
         if (signupObjData.email === loginObj.email && signupObjData.password === loginObj.password){
             alert("Signed in successfully");
             localStorage.setItem("login", JSON.stringify(signupObjData));
+            window.location.href="homePage.html"
         }
         else{
             alert("Your email and password does not match with our records.");
