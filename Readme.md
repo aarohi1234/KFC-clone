@@ -1,5 +1,4 @@
-Here is the deployed link ->
-https://stellar-hamster-d75ef8.netlify.app/
+
 
 
 ![KFC Homepage]
